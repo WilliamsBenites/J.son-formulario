@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Asíncrono con JSON-Server</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center">CRUD Asíncrono</h1>
+
+    
+        <form id="itemForm">
+            <div class="mb-3">
+                <label for="itemName" class="form-label">Nombre del Ítem</label>
+                <input type="text" id="itemName" class="form-control" placeholder="Nombre del ítem" required>
+            </div>
+            <div class="mb-3">
+                <label for="itemPrice" class="form-label">Precio del Ítem</label>
+                <input type="number" id="itemPrice" class="form-control" placeholder="Precio del ítem" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar Ítem</button>
+        </form>
+
+        <h2 class="mt-5">Lista de Ítems</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="itemList">
+             
+            </tbody>
+        </table>
+    </div>
+
+   
+    <script src="script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
